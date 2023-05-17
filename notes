@@ -1,0 +1,62 @@
+->Angular is JS Framework which is use to create attractive single page website.
+
+
+Difference between Angular vs Angular 1 vs Lastest Version o f angular.
+
+
+Angular 1 (angularJs) ->there were lots of flaws in this version so angular was updated to 1 2 3 10,12,13,and so on.
+
+
+angular installation :-  npm install -g @angular/cli
+
+ng version:- to check the angular version 
+ng serve to run the server
+
+ng new project name to create the angular project.
+
+ngModel ->listen what is in input tag and store it in paragraph
+<input type="text" [(ngModel)]="name"/>
+<p> {{name}}</p>
+
+TYPESCRIPT:-
+
+TS is superset of JS (as it offers more features than JS like Classess,INterface,strong typing let n:Number=>accepts only the integer data)
+
+TS is not understood by browser because of this TS is compiled to JS by CLI to make it easily understood by browser.
+
+How Does Angular Project is Started?
+
+pehele index.html load hota hai browser pe
+main.ts pe bootstrap pe jo file bhejta hai woh component intially render hota hai
+waha se hum woh componenet ka tmplate render krte hai app.component.html file 
+
+
+  selector:'app-server',//html tag ke liye hota hai jo hum component ts mai likhte hai
+    templateUrl:'./server.component.html' ->html file of the same component
+
+    create a component throught command line :-
+
+    @Component({
+      selector:""// html tag,
+      templateUrls:[] //pass the relative path for html file
+      template:'' for inline html tags
+      styles:'' for inline styling
+      stylesUrls:[] //pass the relative path for css file
+          })
+
+  
+  What is DataBinding?
+  --> Communication between typescript(business logic) and html template =>response the output to the html template 
+    stringInterpolation 1.[{{data}}] 2.['property']="data
+
+    vice versa
+    when and event occurs the request is sent tot the business logic
+        Event Binding:- ((event):"expression")
+
+    two way binding:-[ngModel]="data"
+
+    String INterpolation =>return the string or the data which can be easily converted into string,we cant write any conditions in string interpolation can call the function which will return only string.
+
+
+    PROPERTY BINDING:-
+    
