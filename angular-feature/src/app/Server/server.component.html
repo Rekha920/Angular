@@ -1,2 +1,2 @@
 <!-- <p>{{"Server"}} is Rnning on Id {{serverId}} whose status is {{serverStatus}}</p> -->
-<p [ngStyle]="{backgroundColor : getColor()}">{{"Server"}} is Rnning on Id {{serverId}} whose status is {{getServerStatus()}}</p>
+<p [ngStyle]="{backgroundColor : getColor()}" [ngClass]="{online: serverStatus==='Online'}">{{"Server"}} is Rnning on Id {{serverId}} whose status is {{getServerStatus()}}</p>

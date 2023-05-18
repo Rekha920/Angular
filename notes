@@ -62,3 +62,7 @@ waha se hum woh componenet ka tmplate render krte hai app.component.html file
     
 
     Directives:are instruction in the DOM
+
+
+NgStyle=>allow us to add the css 
+NgClass=>allow us to dynamically remove and add classes.
